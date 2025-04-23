@@ -29,7 +29,7 @@ export async function sendEmail({
   from,
 }: EmailOptions): Promise<SendEmailResult> {
   try {
-    const senderEmail = from || 'noreply@simstudio.ai'
+    const senderEmail = from || 'noreply@rapidagent.ai'
 
     if (!resend) {
       logger.info('Email not sent (Resend not configured):', {
